@@ -6,7 +6,7 @@
     <title>🐬 Dolphin Facts</title>
     <style>
         :root {
-            --background-color: #f0f8ff;
+            --background-color: #f0f8ff; /* Original background color */
             --container-bg-color: rgba(255, 255, 255, 0.9);
             --button-bg-color: #007bff;
             --button-hover-bg-color: #0056b3;
@@ -19,8 +19,7 @@
 
         body {
             font-family: var(--font-family);
-            background: url('https://source.unsplash.com/1600x900/?ocean,sea') no-repeat center center fixed;
-            background-size: cover;
+            background-color: #add8e6; /* Change this to your desired color */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,15 +47,15 @@
             font-size: 18px;
             margin-top: 20px;
             cursor: pointer;
-            background-color: var(green);
-            color: skyblue;
+            background-color: var(--button-bg-color);
+            color: green;
             border: none;
             border-radius: 5px;
-            transition: background-color var(blue), transform var(green);
+            transition: background-color var(--transition-duration), transform var(--transition-duration);
         }
 
         button:hover {
-            background-color: var(--button-hover-bg-color);
+            background-color: var(--button-hover-bg-grey);
             transform: scale(1.05);
         }
 
