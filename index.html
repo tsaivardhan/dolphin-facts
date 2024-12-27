@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolphin Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fun Dolphin Facts</h1>
+        <button id="generateFact">Generate Fact</button>
+        <p id="factDisplay"></p>
+    </div>
+    <script>
+        const dolphinFacts = [
+            "Dolphins are known for their high intelligence and are considered one of the smartest animals on Earth.",
+            "They are highly social animals, often living in groups called pods that can consist of up to a dozen individuals.",
+            "Dolphins communicate using a variety of clicks, whistles, and body movements.",
+            "They use echolocation to hunt and navigate, emitting sound waves and listening for the echoes that bounce back.",
+            "There are over 40 species of dolphins, including the well-known bottlenose dolphin.",
+            "Dolphins can swim at speeds of up to 20 miles per hour.",
+            "They breathe through a blowhole located on top of their heads, not through their mouths.",
+            "Dolphins sleep with one eye open and one half of their brain awake to watch for predators and surface for air.",
+            "Their diet mainly consists of fish and squid.",
+            "Dolphins can live for 20 to 50 years, depending on the species.",
+            "They are known for their playful behavior, often seen riding waves and leaping out of the water.",
+            "Some dolphins use tools, such as sponges, to protect their snouts while foraging on the seafloor.",
+            "Dolphins have been known to help injured individuals and even humans in distress.",
+            "Certain dolphin populations exhibit unique behaviors and hunting techniques passed down through generations.",
+            "Dolphins can mimic human actions and sounds, showcasing their learning abilities.",
+            "They form strong social bonds and can recognize each other even after years of separation.",
+            "Dolphins can jump up to 15 feet in the air.",
+            "They shed their outer skin every two hours to maintain a smooth surface for efficient swimming.",
+            "Each dolphin has a unique whistle that acts like a name, allowing them to identify each other.",
+            "While some dolphin species are abundant, others are endangered due to threats like pollution, fishing nets, and habitat loss."
+        ];
+
+        document.getElementById('generateFact').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * dolphinFacts.length);
+            document.getElementById('factDisplay').textContent = dolphinFacts[randomIndex];
+        });
+    </script>
+</body>
+</html>
