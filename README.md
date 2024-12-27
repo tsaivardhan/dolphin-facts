@@ -14,10 +14,8 @@ To set up this project locally, follow these steps:
 1. **Clone the Repository**: Open your terminal or command prompt and run the following command to clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/dolphin-facts.git
+   git clone https://github.com/tsaivardhan/dolphin-facts.git
    ```
-
-   Replace `your-username` with your GitHub username.
 
 2. **Navigate to the Repository Folder**:
 
@@ -45,4 +43,3 @@ This project is open source and available under the [MIT License](LICENSE).
 - Built with love for educational purposes.
 ```
 
-Make sure to replace `your-username` with your actual GitHub username in the URLs. You can also customize the `README.md` file further to include more details or sections as needed.
