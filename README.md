@@ -40,6 +40,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Acknowledgments
 
 - Inspired by the beauty and intelligence of dolphins.
-- Built with love for educational purposes.
-```
+- Built with love for educational purposes.s
 
